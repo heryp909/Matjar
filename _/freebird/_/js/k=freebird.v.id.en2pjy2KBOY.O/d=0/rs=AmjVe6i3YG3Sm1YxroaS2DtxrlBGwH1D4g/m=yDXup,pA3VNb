@@ -1,0 +1,27 @@
+"use strict";this.default_v=this.default_v||{};(function(_){var window=this;
+try{
+_.q("yDXup");
+var ONa=function(a){var b=a.text,c=a.FN;a=a.AH;return(0,_.P)('<span class="'+_.S("quantumWizTooltipTooltip")+(a?"":" "+_.S("noOverflow"))+(c?"":" "+_.S("isTouch"))+" "+_.S("exportTooltip")+'"><span class="'+_.S("quantumWizTooltipBackground")+'"></span><span class="'+_.S("quantumWizTooltipText")+'">'+_.Q(b)+"</span></span>")};
+var lZ;lZ=_.wX()?14:24;_.mZ=function(a){_.N.call(this,a.Ga);this.j=a.rb.Db;this.g=null};_.x(_.mZ,_.N);_.mZ.Ta=_.N.Ta;_.mZ.ya=function(){return{rb:{Db:_.Vx}}};_.mZ.prototype.show=function(a,b,c,d,e,f,h){b=_.jH(this.o.bind(this,b,a,h));this.g=PNa(this,b,a,c||0,d||0,e||"bottom",!!f,!!h);return b};_.mZ.prototype.hide=function(a,b){this.g.cancel();QNa(a,!!b)};
+var PNa=function(a,b,c,d,e,f,h,l){var m,p=a.H.bind(a,b,c,d,e,f,l);a={id:"r08add",element:b,el:function(r){m=p();r.bottom=m.pA+"px";r.right=m.qA+"px";h&&(r.transform="translate("+(m.qA-m.vS)+"px, "+(m.pA-m.uS)+"px)")}};c={id:"yXOQKd",element:b,Qi:["isActive"],style:{visibility:"visible"},el:function(r){r.transformOrigin=m.transformOrigin;r.transform="translate(0, 0)"},duration:200};h&&(c.delay=400,c.Qi.push("animateIn"));return(new _.CV).step(a).step(c).step({id:"W2rNCc",element:b,Xm:["animateIn"]}).start()},
+QNa=function(a,b){var c={id:"r08add",element:a};b&&(c.duration=70,c.Qi=["animateOut"],c.style={opacity:0});_.Cj((new _.CV).step(c).start(),function(){_.hH(_.iH().Za(function(){a.parentNode.removeChild(a)}))()})};
+_.mZ.prototype.H=function(a,b,c,d,e,f){a=a.getBoundingClientRect();var h=b.getBoundingClientRect(),l=h.top+(h.height-a.height)/2,m=h.left+(h.width-a.width)/2,p=l,r=m;switch(e){case "left":e="100% 50%";m-=a.width/2;r=h.left-lZ-a.width;break;case "right":m+=a.width/2;e="0 50%";r=h.right+lZ;break;case "top":e="50% 0";l-=a.height/2;p=h.top-lZ-a.height;break;default:e="50% 100%",l+=a.height/2,p=h.bottom+lZ}p+=c;r+=d;b=_.Ci(_.Fi(_.vi(b)));f||(p=Math.min(Math.max(p,16),Math.max((b.height-a.height)/2,b.height-
+a.height-16)),r=Math.min(Math.max(r,16),Math.max((b.width-a.width)/2,b.width-a.width-16)));return{transformOrigin:e,uS:b.height-l-a.height,vS:b.width-m-a.width,pA:b.height-p-a.height,qA:b.width-r-a.width}};_.mZ.prototype.o=function(a,b,c){a=_.Ux(this.j,ONa,{text:a,FN:_.wX(),AH:void 0===c?!1:c});_.vi(b).body.appendChild(a);return a};_.Ku(_.wx,_.mZ);
+
+_.t();
+
+}catch(e){_._DumpException(e)}
+try{
+_.q("pA3VNb");
+_.nZ=function(a){_.N.call(this,a.Ga);var b=this;this.o=this.g=null;this.N=a.Ba.label;this.H=null;this.j=function(){null==this.H&&(this.H=window.setTimeout(this.hide.bind(this,!0),300))}.bind(this);this.O=function(c){b.g.contains(_.vi(b.g).elementFromPoint(c.clientX,c.clientY))||b.j()};this.T=function(c){c.target!==b.g&&b.j()};this.V=function(c){c.target===window?b.hide(!1):c.relatedTarget!==b.g&&b.j()}};_.x(_.nZ,_.N);_.nZ.Ta=_.N.Ta;_.nZ.ya=function(){return{Ba:{label:_.mZ}}};
+_.nZ.prototype.show=function(a,b,c,d,e){var f=!0;if(this.o){if(this.g==a)return RNa(this,this.o);this.hide(!1);f=!1}this.g=a;this.o=this.N.show(a,b,c,d,e,f);this.g.addEventListener("mouseleave",this.O,!0);this.g.addEventListener("blur",this.j,!0);this.g.addEventListener("touchend",this.j,!0);this.g.addEventListener("click",this.j,!0);window.addEventListener("touchmove",this.j,!0);window.addEventListener("focus",this.T,!0);window.addEventListener("blur",this.V,!0);return RNa(this,this.o)};
+var RNa=function(a,b){return{isDisposed:function(){return b!==this.o}.bind(a),dispose:function(){b===this.o&&this.hide()}.bind(a)}};
+_.nZ.prototype.hide=function(a){this.o&&(this.g.removeEventListener("mouseleave",this.O,!0),this.g.removeEventListener("blur",this.j,!0),this.g.removeEventListener("touchend",this.j,!0),this.g.removeEventListener("click",this.j,!0),window.removeEventListener("touchmove",this.j,!0),window.removeEventListener("focus",this.T,!0),window.removeEventListener("blur",this.V,!0),this.N.hide(this.o,void 0!==a?a:!0),window.clearTimeout(this.H),this.g=this.o=this.H=null)};_.Ku(_.xx,_.nZ);
+
+_.t();
+
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_v);
+// Google Inc.
+
+//# sourceURL=https://www.gstatic.com/_/freebird/_/js/k=freebird.v.id.en2pjy2KBOY.O/d=0/rs=AMjVe6i3YG3Sm1YxroaS2DtxrIBGwH1D4g/m=yDXup,pA3VNb
